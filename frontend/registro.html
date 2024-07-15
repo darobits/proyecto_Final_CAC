@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse - Biblioteca Codo a Codo</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Agregar FontAwesome para los iconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><i class="fas fa-book"></i> Biblioteca Codo a Codo</a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <section class="main-section background-image registro">
+    <div class="overlay"></div>
+    <div class="form-container">
+      <h2>Registrarse</h2>
+      <form id="registro-form" action="/api/biblioteca/registro" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+        <input type="text" name="dni" placeholder="Documento" required>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required>
+        <input type="password" name="contrasenia" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+    </form>
+      <p class="redirect-text">¿Ya tienes una cuenta? <a href="iniciarSesion.html">Iniciar Sesión</a></p>
+    </div>
+  </section>
+
+  <!-- Script para manejar la funcionalidad del formulario -->
+  <script src="js/registro.js"></script>
+</body>
+</html>

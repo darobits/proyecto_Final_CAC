@@ -1,0 +1,334 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #333; /* Fondo gris oscuro */
+  color: white;
+}
+
+header {
+  padding: 10px 20px;
+  background-color: #0b396b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* Estilos para el footer */
+.footer-content {
+  background-color: #0b396b; /* Fondo azul oscuro */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos para iconos en el footer */
+.social-icons {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.footer-content p a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content p a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos específicos para index.html */
+.index {
+  background-image: url('../pages/img/fondo-index.jpg'); /* Ruta correcta de la imagen */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 100vh; /* Ajustar la altura de la sección al 100% del viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.index .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.index-content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente gris */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  max-width: 80%;
+}
+
+.index h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.index p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.index .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #06c739; /* Azul para botón */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.index .btn:hover {
+  background-color: #06e6ff; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Ajustes para el navbar */
+.navbar .nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Estilos específicos para registro.html e iniciarSesion.html */
+.background-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.background-image.registro {
+  background-image: url('../pages/img/fondo-registro.jpg'); 
+}
+
+.background-image.iniciar-sesion {
+  background-image: url('../pages/img/fondo-registro.jpg'); 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  color: white;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #555; /* Fondo gris oscuro para inputs */
+  color: white;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00bcd4; /* Sombra azul al enfocar */
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #06c739; /* Azul para botón */
+  color: white;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #06e6ff; /* Azul más oscuro al pasar el ratón */
+}
+
+.redirect-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.redirect-text a {
+  color: #00bcd4; /* Enlace azul */
+  text-decoration: none;
+}
+
+.redirect-text a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los libros traídos de la base de datos */
+.libro {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #444; /* Fondo gris oscuro para cada libro */
+  border-radius: 10px;
+  color: white;
+}
+
+.libro h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.libro p {
+  margin: 5px 0;
+}
+
+.libro img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* Estilos para botones */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0b396b; /* Azul oscuro */
+  color: white;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #06e6ff; /* Azul más claro al pasar el ratón */
+}
+
+/* Contenedor principal de los libros */
+#libros-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Estilos para cada libro */
+.libro {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #555;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.libro:hover {
+  transform: translateY(-5px);
+}
+
+.libro h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.libro p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.libro img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 5px;
+}
